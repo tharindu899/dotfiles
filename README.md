@@ -15,36 +15,33 @@
 ### ⚠️ Fork Repo and replace git clone url with your own! ⚠️
 
     rm -rf .termux/termux.properties
-    ## REPLACE THIS URL ⬇️
-    git clone --bare https://github.com/GR3YH4TT3R93/dotfiles.git ~/GitHub/dotfiles
-    ## REPLACE THIS URL ⬆️
+    git clone --bare https://github.com/tharindu899/dotfiles.git ~/GitHub/dotfiles
     git --git-dir=$HOME/GitHub/dotfiles --work-tree=$HOME checkout
     git --git-dir=$HOME/GitHub/dotfiles --work-tree=$HOME config --local status.showUntrackedFiles no
-    ## THE NEXT LINE AUTOMATICALLY RUNS THE AUTO-INSTALLER REMOVE IF YOU WANT TO RUN IT MANUALLY
     ~/.termux/autoinstall.sh
 
 ## Clone Dotfiles as Normal Repo
 
     rm -rf .termux
-    git clone https://github.com/GR3YH4TT3R93/dotfiles.git ~/
+    git clone https://github.com/tharindu899/dotfiles.git ~/
 
-## Run Install Script
+## Run Install Script manualy
 
-    # Manual, you choose!
     ~/.termux/install.sh
 
-    # Auto, installs everything with minimal interaction
+## Auto, installs everything with minimal interaction
+
     ~/.termux/autoinstall.sh
 
 ## For both methods set new remote!
 
     bare:
-    b remote set-url https://your.git.fork/repo
+    b remote set-url https://github.com/tharindu899/dotfiles.git
 
     regular:
     git init
     git config --local status.showUntrackedFiles no
-    git remote add origin https://your.git.fork/repo
+    git remote add origin https://github.com/tharindu899/dotfiles.git
 
 ## Install Nvim Plugins
 
